@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul>li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+.navlist {
+    display: flex;
+}
+
+.nav_item:last-child {
+    padding-right: 0px;
+}
+
+.nav_item {
+    padding-right: 40px;
+}
+
+.nav_link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: rgba(21, 1, 1, 0.7);
+}
+
+.btn {
+    width: 165px;
+    height: 49px;
+    background: #D23166;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FAFAFA;
+}
+
+.hero {
+    background: rgba(242, 206, 218, 0.3);
+}
+
+.circle {
+    border-radius: 50%;
+    width: 365px;
+    height: 353px;
+
+    background: rgba(210, 49, 103, 0.1);
+}
+
+.icecreamImage {
+    margin-top: 37px;
+    right: 0;
+}
