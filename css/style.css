@@ -180,9 +180,6 @@ span {
 .info_list {
     display: flex;
     justify-content: space-between;
-}
-
-.info_list {
     padding-top: 100px;
 }
 
@@ -204,7 +201,14 @@ span {
     height: 200px;
 }
 
+.icon {
+    margin-top: 33px;
+    margin-bottom: 24.65px;
+}
+
 .infoDesc {
+    margin-top: 9px;
+    margin-bottom: 27px;
     font-family: 'Hind Madurai';
     font-style: normal;
     font-weight: 400;
