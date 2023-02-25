@@ -58,7 +58,7 @@ h6 {
     padding-right: 40px;
 }
 
-span {
+.icecreamtext {
     color: #D23166;
 }
 
@@ -286,8 +286,10 @@ span {
 
 .menuContainer {
     padding-top: 137px;
-    background: #E5E5E5;
     align-items: center;
+}
+
+.header {
     display: flex;
     flex-direction: column;
 }
@@ -332,3 +334,73 @@ span {
     text-decoration-color: #D64374;
     text-decoration-thickness: 3px;
 }
+
+.Menu {
+    background-color: #FFFFFF;
+}
+
+.product__item {
+    display: flex;
+    text-align: left;
+    position: relative;
+    justify-content: space-between;
+}
+
+.product__img {
+    width: 100%;
+}
+
+.product__img-wrap {
+    width: 50%;
+}
+
+.productItem:nth-child(even) {
+    text-align: right;
+    flex-direction: row-reverse;
+}
+
+.offer {
+    position: absolute;
+    right: 0px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.productItem:nth-child(even) .offer {
+    left: 0px;
+    right: auto;
+}
+
+.offer__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 11px;
+}
+
+.offer__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 25px;
+}
+
+.offer__price-new {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.offer__price-old {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+}
+
