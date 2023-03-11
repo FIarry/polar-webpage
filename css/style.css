@@ -41,6 +41,8 @@ h6 {
     padding: 25px 0px;
 }
 
+
+
 .container {
     max-width: 1140px;
     margin: 0px auto;
@@ -289,9 +291,10 @@ h6 {
     align-items: center;
 }
 
-.header {
+.productHeader {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .typeList {
@@ -480,7 +483,13 @@ h6 {
     position: relative;
 }
 
-.reviewText::before {}
+.reviewText::before {
+    content: url(../img/quotes.svg);
+}
+
+.reviewText::after {
+    content: url(../img/quotes.svg);
+}
 
 .name {
     font-family: 'Roboto';
@@ -506,42 +515,79 @@ h6 {
     margin-left: 11px;
 }
 
-.appContainer {
-    display: flex;
-    background: #F8EDF0;
 
+.app {
+    background: #F8EDF0;
 }
 
-.orderContainer .appShowcase {}
+.appContainer {
+    display: flex;
+    padding-top: 59px;
+    align-items: center;
+}
 
-.Phone {}
+.appInfo {
+    margin-left: 136px;
+}
+.aboutTitle {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 44.2px;
+line-height: 52px;
+color: #000000;
+margin-bottom: 30px;
+}
 
-.appInfo {}
+.aboutDescription {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: 0.01em;
+color: rgba(15, 1, 1, 0.7);
+margin-bottom: 30px;
+}
 
-.about {}
-
-.aboutTitle {}
-
-.aboutDescription {}
-
-.howtouse {}
-
-.stepstouse {}
+.stepstouse {
+    padding: 0;
+}
 
 .step {
     display: flex;
+    margin-bottom: 15px;
+    align-items: center;
 }
 
+.step:last-child {
+    margin: 0;
+}
 .stepImgWrap {
     width: 30px;
     height: 30px;
     background-color: white;
     border-radius: 30%;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-.stepImg {}
+.stepImg {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
 
-.stepInstruction {}
+.stepInstruction {
+    margin-left: 10px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+color: #000000;
+}
 
 .download {
     display: flex;
