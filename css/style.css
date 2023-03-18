@@ -21,6 +21,11 @@ a {
     text-decoration: none;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 ul>li {
     list-style: none;
 }
@@ -40,8 +45,6 @@ h6 {
     justify-content: space-between;
     padding: 25px 0px;
 }
-
-
 
 .container {
     max-width: 1140px;
@@ -260,6 +263,7 @@ h6 {
 .actionImgWrap {
     width: 50%;
     position: relative;
+    flex: 1;
 }
 
 .actionImgWrap::after {
@@ -277,7 +281,7 @@ h6 {
 }
 
 .actionText {
-    margin-right: 200px;
+    flex: 1;
 }
 
 .actionImg {
@@ -291,7 +295,7 @@ h6 {
     align-items: center;
 }
 
-.productHeader {
+.headerProduct {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -481,14 +485,29 @@ h6 {
     line-height: 24px;
     color: rgba(0, 0, 0, 0.7);
     position: relative;
+    max-width: 345px;
+    padding-left: 23px;
 }
 
 .reviewText::before {
-    content: url(../img/quotes.svg);
+    content: "";
+    background: url(../img/quotes.svg) center/contain no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    display: block;
 }
 
 .reviewText::after {
-    content: url(../img/quotes.svg);
+    content: "";
+    background: url(../img/quotes.svg) center/contain no-repeat;
+    transform: scale(-1, 1);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: sub;
 }
 
 .name {
@@ -515,83 +534,86 @@ h6 {
     margin-left: 11px;
 }
 
+.appContainer {
+    display: flex;
+    padding-top: 60px;
+}
 
 .app {
     background: #F8EDF0;
 }
 
-.appContainer {
-    display: flex;
-    padding-top: 59px;
-    align-items: center;
-}
-
 .appInfo {
     margin-left: 136px;
+    padding-top: 31px;
 }
+
 .aboutTitle {
+    margin-bottom: 30px;
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 44.2px;
-line-height: 52px;
-color: #000000;
-margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44.2px;
+    line-height: 52px;
+    color: #000000;
 }
 
 .aboutDescription {
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-letter-spacing: 0.01em;
-color: rgba(15, 1, 1, 0.7);
-margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: rgba(15, 1, 1, 0.7);
 }
 
 .stepstouse {
     padding: 0;
+    margin-top: 29px;
+    margin-bottom: 39px;
 }
 
 .step {
     display: flex;
-    margin-bottom: 15px;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .step:last-child {
     margin: 0;
 }
+
 .stepImgWrap {
     width: 30px;
     height: 30px;
     background-color: white;
     border-radius: 30%;
     display: flex;
-    align-items: center;
     position: relative;
 }
 
 .stepImg {
+    align-self: center;
     position: absolute;
     right: 50%;
     transform: translateX(50%);
 }
 
 .stepInstruction {
-    margin-left: 10px;
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 26px;
-color: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    margin-left: 10px;
 }
 
 .download {
     display: flex;
     align-items: center;
+    padding-right: 13px;
 }
 
 .GPdownloadImgWrap {
@@ -610,4 +632,171 @@ color: #000000;
 
 .ASdownloadImg {
     width: 100%;
+}
+
+.questionBox {
+    align-items: center;
+    display: flex;
+    padding-top: 191px;
+    flex-direction: column;
+    padding-bottom: 149px;
+}
+
+.questionTitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 28px;
+}
+
+.questionTextBox {
+    margin-top: 58px
+}
+
+.questionInput {
+    width: 503px;
+    height: 74px;
+    border-radius: 5px;
+    background: #FAFAFA;
+    padding-left: 30px;
+    border: 0px;
+}
+
+.submitQuestion {
+    width: 134px;
+    height: 74px;
+    border-radius: 5px;
+    background-color: #D64374;
+    color: #FFFFFF;
+    border: 0px;
+}
+
+.bottom {
+    background-color: #0A0808;
+}
+
+.bottomContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 104px;
+}
+
+.headline {
+    max-width: 207px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 25px;
+}
+
+.follow {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.contactList {
+    display: flex;
+}
+
+.contactItem {
+    margin-right: 10px;
+}
+
+.webPages {
+    padding-top: 160px;
+}
+
+.webPage {
+    margin-bottom: 10px;
+}
+
+.webpage:last-child {
+    margin: 0;
+}
+
+.bottomItem {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.policies {
+    padding-top: 153px;
+}
+
+.policy {
+    margin-bottom: 10px;
+}
+
+.policy:last-child {
+    margin: 0;
+}
+
+.support {
+    padding-top: 60px;
+}
+
+.newsTitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.emailInput {
+    background-color: #0A0808;
+    border: #D64374 2px solid;
+    width: 263px;
+    height: 55px;
+    padding-left: 32px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.submitEmail {
+    background-color: #D23166;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border: 0;
+    height: 55px;
+    width: 125px;
+    border-radius: 5px;
+}
+
+.donationList {
+    display: flex;
+    margin-top: 15px;
+}
+
+.donationItem {
+    margin-right: 15px;
+}
+
+.donationItem:last-child {
+    margin: 0;
 }
